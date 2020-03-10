@@ -1,0 +1,129 @@
+.main_section4 {
+    margin-bottom: 4%;
+    background-image: url('../images/become_client_bg.png');
+    background-repeat: no-repeat;
+}
+
+.become_client__wrapper {
+    @include flexy(space-between);
+    margin-bottom: 4%;
+    @media screen and (max-width: 425px) {
+        @include container(320px);
+    }
+
+    .left__line {
+        margin-top: 4%;
+        @include flexy(center, center);
+        width: 30%;
+        @media screen and (max-width: 1050px) {
+            width: 25%;
+        }
+        @media screen and (max-width: 850px) {
+            width: 20%;
+        }
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    .right__line {
+        margin-top: 4%;
+        @include flexy(center, center);
+        width: 30%;
+        @media screen and (max-width: 1050px) {
+            width: 25%;
+        }
+        @media screen and (max-width: 850px) {
+            width: 20%;
+        }
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    .become_client__title {
+        margin-top: 4%;
+        @include font(700, 36px);
+        color: $titleColor;
+        @media screen and (max-width: 425px) {
+            font-size: 26px;
+            margin-bottom: 4%;
+        }
+    }
+}
+
+.become_client__explain {
+    @include container(900px);
+
+    .explain__left_side,
+    .explain__right_side {
+        @include flexy();
+        margin-bottom: 8%;
+        @media screen and (max-width: 425px) {
+            margin-bottom: 5%;
+        }
+    }
+}
+
+.explain__description {
+    @include flexy(center, center, column);
+    margin-left: 2%;
+
+    &__right {
+        @include flexy(center, center, column);
+        margin-right: 2%;
+    }
+
+    &__title {
+        @include font(400, 24px);
+        align-self: flex-start;
+        margin-bottom: 3%;
+        color: $titleColor;
+
+        &_right {
+            @include font(400, 24px);
+            align-self: flex-end;
+            margin-bottom: 3%;
+            color: $titleColor;
+        }
+    }
+
+    &__text {
+        @include font();
+        color: $mainTextColor;
+    }
+}
+
+.explain__button {
+    @include flexy(center);
+    margin-top: 20%;
+    padding-bottom: 17%;
+
+    &_degustation {
+        @include font();
+        background: none;
+        border: 2px solid $mainColor;
+        border-radius: 15px;
+        text-transform: uppercase;
+        color: $titleColor;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        letter-spacing: 3px;
+        transition: 0.5s;
+
+        @media screen and (max-width: 425px) {
+            padding-left: 7%;
+            padding-right: 7%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        &:hover {
+            border: 2px solid $activeButton;
+            background-color: $activeButton;
+            color: $titleColor;
+        }
+    }
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Prosto Food</title>
+</head>
+<body>
+    <header class="page-header">
+        <section class="page-header__top">
+            <div class="logo-top">
+                <img src="images/logo.png" alt="Prosto Food">
+            </div>
+            <div class="top_line"></div>
+            <div class="top_contacts">
+                <div class="top_contacts__wrapper">
+                    <a class="top_phone" href="tel:+380661739613">+380661739613</a>
+                    <a class="facebook_top_logo" href="http://facebook.com">
+                        <img class=" responsive" src="images/facebook_logo.png" alt="facebook">
+                    </a>
+                    <a class="instagram_top_logo" href="http://instagram.com">
+                        <img class=" responsive" src="images/instagram_logo.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="top_contacts__button__wrapper">
+                    <button type="button" onclick="showDegustation();" class="degustation_button" type="button">ЗАМОВИТИ ДЕГУСТАЦІЮ</button>
+                </div>
+            </div>
+            <div class="top_line2"></div>
+        </section>
+        <section class="page-header__center">
+            <div class="header__mobile__logo">
+                <img class=" mobile__logo" srcset="images/logo.png 1.5x" alt="Prosto Food">
+            </div>
+            <h2 class="main_title">не дасть голоду тебе з’їсти</h2>
+            <h2 class="secondary_title">інноваційні сервіси<br> харчування в офісі</h2>
+        </section>
+    </header>
+    <main class="main" id="main">
+        <section class="office-meal_snack-machine main_section1">
+            <div class="main_section1__wrapper">
+                <div class="main_section1__image">
+                    <img src="images/office_meal_snack_machine.png" class="responsive" alt="office meal snack machine">
+                </div>
+                <div class="main_section1__content_wrapper" id="main_section1_links">
+                    <div class="office_meal">
+                        <div class="office_meal__image">
+                            <img class="responsive" src="images/office_meal_top.png" alt="office meal">
+                        </div>
+                        <p class="office_meal__description">
+                            Харчування в офісі ще ніколи не було таким зручним! 
+                            Великий асортимент готових страв на будь-який смак 
+                            гідних вашої уваги – супи, салати, міли, бургери, 
+                            сендвічи та десерти. Смачний обід в екологічній тарі 
+                            та найкращий сервіс від ProstoFood.
+                        </p>
+                        <a href = '#office_meal' class="office_meal__button">Детальніше</a>
+                    </div>
+                    <div class="snack_machine">
+                        <div class="snack_machine__image">
+                            <img class="responsive" src="images/snack_machine_top.png" alt="office meal">
+                        </div>
+                        <p class="snack_machine__description">
+                            Сучасний снековий автомат з широким вибором смачних перекусів 
+                            не дозволить нікому бути голодним. Енергетичні продукти, напої, 
+                            здорова їжа, шоколад, снеки – обирай те, що втамує саме твій голод. 
+                            Snack Machine – найкраще рішення для офісу з великою кількістю працівників!
+                        </p>
+                        <a href = '#snack_machine' class="snack_machine__button">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="office_meal main_section2" id="office_meal">
+            <div class="main_section2__wrapper">
+                <div class="main_section2_title__wrapper">
+                    <h2 class="office_meal__title">office meal від prostofood</h2>
+                    <div class="office_meal__line_container">
+                        <img class="office_meal__line responsive" src="images/office_meal_line.png" alt="line">
+                    </div>
+                </div>
+                <div class="main_section2_content__wrapper">
+                    <div class="free_choice">
+                        <h3 class="free_choice__title content_title">FREE CHOICE</h3>
+                        <p class="free_choice__description content_description">
+                            Холодильник-вітрина від ProstoFood встановлюється в офісі та щоденно 
+                            поповнюється смачними готовими стравами. Зголоднів? Обирай будь-яку 
+                            страву на свій смак та сплачуй зручним способом. Компанії не треба 
+                            сплачувати за обслуговування й установку вітрини, а також за обіди працівників.
+                        </p>
+                        <button type="button" onclick="showFreeChoice();" class="free_choice__button content_button">Замовити</button>
+                    </div>
+                    <div class="preorder">
+                        <h3 class="preorder__title content_title">PREORDER</h3>
+                        <p class="preorder__description content_description">
+                            Зручні умови для замовлення комплексних обідів для працівників з доставкою в офіс. 
+                            Кожен співробітник має змогу обрати страви на тиждень вперед у рамках бюджету компанії – 
+                            замовник оплачує щоденну доставку смачних обідів для усього колективу. 
+                            ProstoFood гарантує високу якість та чудовий смак здорової їжі, вчасну 
+                            щоденну доставку іменних обідів до офісу. 
+                        </p>
+                        <button type="button" onclick="showPreorder();" class="preorder__button content_button">Замовити</button>
+                    </div>
+                </div>
+                <div class="main_section2_footer">
+                    <img class="long_line responsive" src="images/long_line.png" alt="line">
+                </div>
+            </div>
+        </section>
+        <section class="menu main_section3" id="menu">
+            <div class="main_section3__wrapper">
+                <h2 class="menu__title">МЕНЮ</h2>
+                <ul class="menu__list">
+                    <li class="menu__list_item">
+                        <button type="button" onclick="currentSlide(1)" class="menu__button button__active">САЛАТИ</button>
+                    </li>
+                    <li class="menu__list_item">
+                        <button type="button" onclick="currentSlide(2)" class="menu__button">МІЛИ</button>
+                    </li>
+                    <li class="menu__list_item">
+                        <button type="button" onclick="currentSlide(3)" class="menu__button">СУПИ</button>
+                    </li>
+                    <li class="menu__list_item">
+                        <button type="button" onclick="currentSlide(4)" class="menu__button">СЕНДВІЧІ&БУРГЕРИ</button>
+                    </li>
+                    <li class="menu__list_item">
+                        <button type="button" onclick="currentSlide(5)" class="menu__button">ДЕСЕРТИ</button>
+                    </li>
+                </ul>
+                <div class="menu__card card visible">
+                    <div class="menu__card__description">
+                        <h3 class="menu__card__description_title">Салати</h3>
+                        <p class="menu__card__description_text">
+                            Салати на будь-який смак з найсвіжіших соковитих стиглих овочів та зелені 
+                            – здоровий перекус,
+                            що заряджає енергією. Для приготування використовуються натуральні 
+                            заправки на основі чистих олій та спецій. 
+                        </p>
+                        <button onclick="showMenu();" class="menu__card__description_button">запросити меню</button>
+                    </div>
+                    <div class="menu__card__photos">
+                        <div class="slider">
+                            <ul>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__card card">
+                    <div class="menu__card__description">
+                        <h3 class="menu__card__description_title">Міли</h3>
+                        <p class="menu__card__description_text">
+                            Поєднання другої страви та гарніру чудово втамовує голод. 
+                            Обирайте найсмачніше поєднання продуктів, щоб влаштувати ситний 
+                            обід під час перерви в офісі. Тільки натуральні свіжі 
+                            продукти для вашого задоволення. 
+                        </p>
+                        <button onclick="showMenu();" class="menu__card__description_button">запросити меню</button>
+                    </div>
+                    <div class="menu__card__photos">
+                        <div class="slider">
+                            <ul>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__card card">
+                    <div class="menu__card__description">
+                        <h3 class="menu__card__description_title">Супи</h3>
+                        <p class="menu__card__description_text">
+                            Основна страва здорового правильного харчування у
+                            виконанні кухарів ProstoFood – це найсмачніші 
+                            та найулюбленіші супи європейської та української кухні. 
+                            Обирай супчик собі до смаку та насолоджуйся чудовим 
+                            смаком під час обідньої перерви. 
+                        </p>
+                        <button onclick="showMenu();" class="menu__card__description_button">запросити меню</button>
+                    </div>
+                    <div class="menu__card__photos">
+                        <div class="slider">
+                            <ul>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__card card">
+                    <div class="menu__card__description">
+                        <h3 class="menu__card__description_title">Сендвічі та бургери</h3>
+                        <p class="menu__card__description_text">
+                            Для смачного та ситного перекусу немає нічого кращого ніж сендвіч або бургер. 
+                            Ми використовуємо найкраще м'ясо, овочі, зелень, соуси, а також найсвіжіший 
+                            підрум’янений хліб та булочки для створення неперевершених міксів смаку. 
+                        </p>
+                        <button onclick="showMenu();" class="menu__card__description_button">запросити меню</button>
+                    </div>
+                    <div class="menu__card__photos">
+                        <div class="slider">
+                            <ul>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__card card">
+                    <div class="menu__card__description">
+                        <h3 class="menu__card__description_title">Десерти</h3>
+                        <p class="menu__card__description_text">
+                            Підніми собі настрій з одним із чудових десертів від ProstoFood. 
+                            Ми подбали про любителів солоденького й створили легкі та корисні десерти, 
+                            що не стануть причиною зайвих кіло. Побалувати себе так просто 
+                            зі смачним десертом під час обіду.
+                        </p>
+                        <button onclick="showMenu();" class="menu__card__description_button">запросити меню</button>
+                    </div>
+                    <div class="menu__card__photos">
+                        <div class="slider">
+                            <ul>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            <li><img class="menu__slider__photo" src="images/salat.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="become_client main_section4">
+            <div class="main_section4__wrapper">
+                <div class="become_client__wrapper">
+                    <div class="left__line">
+                        <img class="title_line responsive" src="images/left_line.png" alt="line">
+                    </div>
+                    <h2 class="become_client__title">ЯК СТАТИ НАШИМ КЛІЄНТОМ?</h2>
+                    <div class="right__line">
+                        <img class="title_line responsive" src="images/right_line.png" alt="line">
+                    </div>
+                </div>
+                <div class="become_client__explain">
+                    <div class="explain__left_side">
+                        <div class="explain__image  first_image">
+                            <img class="responsive" src="images/1.png" alt="1">
+                        </div>
+                        <div class="explain__description">
+                            <h3 class="explain__description__title">Замов</h3>
+                            <p class="explain__description__text">
+                                Замовляй безкоштовну дегустацію страв ProstoFood. 
+                                Наш менеджер зв’яжеться з вами щоб домовитися про зручний час та місце для дегустації.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explain__right_side">
+                        <div class="explain__description__right">
+                            <h3 class="explain__description__title_right">Скуштуй</h3>
+                            <p class="explain__description__text">
+                                Оцініть смак та свіжість наших страв та тільки після цього прийміть рішення. 
+                                Наші менеджери допоможуть обрати найбільш оптимальне рішення, 
+                                що відповідатиме потребам харчування працівників вашого офісу.
+                            </p>
+                        </div>
+                        <div class="explain__image second_image">
+                            <img class="responsive" src="images/2.png" alt="2">
+                        </div>
+                    </div>
+                    <div class="explain__left_side">
+                        <div class="explain__image third_image">
+                            <img class="responsive" src="images/3.png" alt="3">
+                        </div>
+                        <div class="explain__description">
+                            <h3 class="explain__description__title">Отримай</h3>
+                            <p class="explain__description__text">
+                                Отримуйте оперативну доставку свіжих страв щодня та встановлення необхідного обладнання у вашому офісі. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explain__right_side">
+                        <div class="explain__description__right">
+                            <h3 class="explain__description__title_right">Насолоджуйся</h3>
+                            <p class="explain__description__text">
+                                Насолоджуйтесь усім колективом неперевершеною смачною здоровою їжею щодня від найкращих поварів сервісу ProstoFood.
+                            </p>
+                        </div>
+                        <div class="explain__image fourth_image">
+                            <img class="responsive" src="images/4.png" alt="4">
+                        </div>
+                    </div>
+                    <div class="explain__button">
+                        <button onclick="showDegustation();" type="button" class="explain__button_degustation">замовити дегустацію</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="snack_machine main_section5" id="snack_machine">
+            <div class="main_section5__wrapper">
+                <div class="main_section5__headline">
+                    <h2 class="main_section5__title">SNACK MACHINE</h2>
+                    <div class="main_section5__line">
+                        <img class="responsive" src="images/snack_machine_line.png" alt="line">
+                    </div>
+                </div>
+                <div class="snack_machine__wrapper">
+                    <div class="snack_machine__about">
+                        <p class="snack_machine__text">
+                            Снековий автомат Snack Machine – сучасне обладнання,
+                             що дозволяє організувати зручну систему придбання 
+                             смачних перекусів для працівників офісів. Автомат 
+                             стане відмінним рішенням для компаній кількістю працівників 80+. 
+                             Snack Machine від ProstoFood є лідером серед операторів снекових автоматів. 
+                        </p>
+                        <p class="snack_machine__text2">
+                            У асортименті представлені напої, снеки, шоколад, 
+                            енергетичні продукти та здорова їжа. 
+                            ProstoFood обслуговує автомат від двох до п'яти разів на тиждень та пропонує гнучкі 
+                            умови для вибору асортименту продуктів. У разі, якщо ви хочете придбати 
+                            снековий автомат, ми також зможемо вам в цьому допомогти.
+                        </p>
+                        <button onclick="showSnack();" type="button" class="snack_machine__order">ЗАМОВИТИ SNACK</button>
+                    </div>
+                    <div class="snack_machine__photo">
+                        <img class="responsive" src="images/snack_machine.png" alt="snack machine">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our_mission clients main_section6">
+            <div class="main_section6__wrapper">
+                <div class="main_section6__headline">
+                    <div class="main_section6__line">
+                        <img class="responsive" src="images/mission_line.png" alt="line">
+                    </div>
+                    <h2 class="main_section6__title">ПРО НАС</h2>
+                </div>
+                <div class="our_mission__wrapper">
+                    <div class="our_mission__image">
+                        <img class="responsive" src="images/office_people.png" alt="office people">
+                    </div>
+                    <div class="our_mission__description">
+                        <p class="our_mission__text1">
+                            Компанія ProstoFood вже більше 5 років дбає про співробітників 
+                            офісів по усьому Києву та Київській області, пропонуючи їм смачні,
+                            корисні та якісні продукти харчування. Комплексне корпоративне 
+                            харчування – це найвища ступінь турботи про співробітників, 
+                            тому компанії повинні довіряти цей обов’язок найкращим професіоналам.
+                            ProstoFood – спеціаліст у питаннях офісного харчування! 
+                        </p>
+                        <p class="our_mission__text2">
+                            Наша компанія повністю виконує увесь спектр завдань з приготування 
+                            та доставки їжі, а також сервісу та обслуговування нашого обладнання 
+                            холодильних вітрин та Snack Machine. Наші головні переваги – великий
+                            асортимент здорових смачних страв на будь-який смак, упаковка ECO Friendly,
+                            постійне відстеження сучасних трендів, співпраця з великою кількістю відомих клієнтів,
+                            а також досвід та професіоналізм кожного співпрацівника сервісу. 
+                        </p>
+                    </div>
+                </div>
+                <div class="clients__wrapper">
+                    <h2 class="clients__title">НАШІ КЛІЄНТИ</h2>
+                    <div class="clients__videos">
+                        <button onclick="slide(-1)" class="prev__video">
+                            <img class="responsive" src="images/back.png" alt="back">
+                        </button>
+                        <div class="video">
+                            <img class="responsive" id="client" src="images/client.png" alt="">
+                        </div>
+                        <button onclick="slide(1)" class="next__video">
+                            <img class="responsive" src="images/next.png" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partnership main_section7" id="partnership">
+            <div class="main_section7__wrapper">
+                <div class="main_section7__headline">
+                    <h2 class="main_section7__title">ПАРТНЕРСЬКА ПРОГРАМА</h2>
+                    <div class="main_section7__line">
+                        <img class="responsive" src="images/partnership_line.png" alt="line">
+                    </div>
+                </div>
+                <div class="partnership__all__wrapper">
+                    <div class="partnership__wrapper">
+                        <div class="partnership__buttons">
+                            <button type="button" onclick="currentSlide2(1);partners();" class="partnership__button partnership__button-active">ПАРТНЕР</button>
+                            <button type="button" onclick="currentSlide2(2);media();" class="partnership__button ">МЕДІА</button>
+                        </div>
+                        <p class="partnership__description partnership_card partnership_card-visible">
+                            Компанія ProstoFood завжди відкрита для нових партнерів та співпраці – 
+                            мі пропонуємо індивідуальні гнучкі умови для кожного партнера 
+                            для задоволення його потреб з організації комплексного харчування 
+                            в офісах по Києву та Київській області. Якщо ви постачальник, 
+                            чи хочете обговорити спільний проект – звертайтеся до нас, будемо раді співпрацювати з вами.
+                        </p>
+                        <p class="partnership__description partnership_card">
+                            Вже зараз ми раді попрацювати з різними медіа каналами, блогами та рекламними 
+                            майданчиками. Компанія ProstoFood відкрита до співпраці з представниками 
+                            відомих брендів та корпорацій – ми гарантуємо високий професіоналізм 
+                            та якість обслуговування.
+                        </p>
+                        <button onclick="showPartner();" type="button" class="partnership__become_partner">стати партнером</button>
+                    </div>
+                    <div class="partnership__slider">
+                        <div class="partnership__slide slide_visible">
+                            <img class="responsive" id="partner__media" src="images/partners.png" alt="henkel">
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order main_section8">
+            <div class="main_section8__wrapper">
+                <div class="main_section8__headline">
+                    <div class="main_section8__line">
+                        <img class="responsive" src="images/order_line.png" alt="line">
+                    </div>
+                    <h2 class="main_section8__title">ЗРОБИТИ ЗАМОВЛЕННЯ</h2>
+                </div>
+                <div class="order__wrapper">
+                    <form class="order__form" action="send.php" method="POST" id="order__form">
+                        <input type="hidden" name="DATA[TITLE]" value="Заявка с конца сайта">
+                        <input class="order__form__input order__form__input1" data-rules="text" placeholder="Ім’я" type="text" name="name" id="1" required>
+                        <input class="order__form__input order__form__input2" data-rules="tel" placeholder="Телефон(Без +38)" pattern="[0-9]{10}" type="tel" name="phone" id="2" required>
+                        <input class="order__form__input order__form__input3" placeholder="E-mail (не обов’язково)" type="email" name="email" id="3">
+                        <button class="order__form__button" type="submit">ЗАЛИШИТИ ЗАМОВЛЕННЯ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__top">
+            <div class="page-footer__top__logo">
+                <img class="responsive" src="images/logo.png" alt="ProstoFood">
+            </div>
+            <div class="page-footer__top__wrapper">
+                <ul class="page-footer__menu" id="page-footer__menu">
+                    <li class="page-footer__menu_item">
+                        <a href="#menu" class="page-footer__menu_link">Меню</a>
+                    </li>
+                    <li class="page-footer__menu_item">
+                        <a href="#partnership" class="page-footer__menu_link">Партнерам</a>
+                    </li>
+                    <li class="page-footer__menu_item">
+                        <a href="" class="page-footer__menu_link">Піддтримка</a>
+                    </li>
+                    <li class="page-footer__menu_item">
+                        <a href="" class="page-footer__menu_link">Конфіденційність</a>
+                    </li>
+                </ul>
+                <div class="page-footer__contacts">
+                    <h3 class="page-footer__contacts__title">Контакти</h3>
+                    <a href="tel:+380661739613" class="page-footer__contacts__phone">+380661739613</a>
+                    <img class="responsive footer__social__contacts" src="images/socials.png" alt="socials">
+                    <a class="page-footer__contacts__email" href="mailto:office@prostofood.ua">office@prostofood.ua</a>
+                </div>
+            </div>
+            <div class="page-footer__top__logo__mobile">
+                <img srcset="images/logo.png 2x" alt="ProstoFood">
+            </div>
+        </div>
+        <div class="page-footer__bottom">
+            <div class="page-footer__left-line">
+                <img class="responsive" src="images/footer_left_line.png" alt="line">
+            </div>
+            <div class="page-footer__socials">
+                <a href="facebook.com" class="page-footer__facebook">
+                    <img src="images/facebook_logo.png" alt="facebook">
+                </a>
+                <a href="instagram.com" class="page-footer__insta">
+                    <img src="images/instagram_logo.png" alt="instagram">
+                </a>
+            </div>
+            <div class="page-footer__right-line">
+                <img class="responsive" src="images/footer_right_line.png" alt="line">
+            </div>
+        </div>
+        <div class="page-footer__credits">
+            <span class="made_by">Created by</span>
+            <a class="who_made" target="_blank" href="http://t.me/artur_reich">Artur Borzov</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

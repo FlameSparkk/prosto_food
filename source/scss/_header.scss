@@ -1,0 +1,199 @@
+.page-header {
+    @include flexy(flex-start, stretch, column);
+    height: 100vh;
+    background: url('../images/header_bg.png') no-repeat center/cover ;
+
+    @media screen and (max-width: 425px) {
+        background: url('../images/mobile_header_bg.png') no-repeat center/cover;
+    }
+
+    &__top {
+        @include flexy();
+        margin-left: 13%;
+        margin-top: 2.5%;
+        
+        @media (max-width: 1305px) {
+            margin-left: 6%;
+        }
+        
+        @media screen and (max-width: 1210px) {
+            margin-left: 2%;
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-left: 0;
+            justify-content: space-around;
+        }
+
+        .logo-top {
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+
+        .top_line {
+            margin-left: 5%;
+            width: 30%;
+            margin-bottom: 2.5%;
+            border-bottom: 2px solid $mainColor;
+
+            @media screen and (max-width: 425px) {
+                margin-left: 0;
+                width: 45%;
+            }
+        }
+
+        .top_line2 {
+            width: 18%;
+            margin-bottom: 2.5%;
+            margin-left: 2%;
+            border-bottom: 2px solid $mainColor;
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+
+        .top_contacts {
+            @include flexy(flex-start, stretch, column);
+            width: 20%;
+            margin-left: 2%;
+
+            @media screen and (max-width: 425px) {
+                width: auto;
+            }
+
+            &__wrapper {
+                @include flexy();
+
+                .top_phone {
+                    @include font(700);
+                    color: $mainColor;
+                    margin-top: 5%;
+                    margin-left: 20%;
+                    letter-spacing: 1px;
+                    @include flexy(center, center);
+
+                    @media screen and (max-width: 425px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .facebook_top_logo {
+                    margin-left: 5%;
+                    margin-top: 5%;
+                    @media screen and (max-width:1410px) {
+                        width: 30px;
+                    }
+                    @media screen and (max-width:1035px) {
+                        display: none;
+                    }
+                    @media screen and (max-width: 425px) {
+                        display: inline;
+                        width: 20px;
+                    }
+                }
+
+                .instagram_top_logo {
+                    margin-left: 4%;
+                    margin-top: 5%;
+                    @media screen and (max-width:1410px) {
+                        width: 30px;
+                    }
+                    @media screen and (max-width:1035px) {
+                        display: none;
+                    }
+                    @media screen and (max-width: 425px) {
+                        display: inline;
+                        width: 20px;
+                    }
+                }
+            }
+
+            &__button__wrapper {
+
+                .degustation_button {
+                    @include font();
+                    letter-spacing: 3px;
+                    width: 100%;
+                    padding-bottom: 3%;
+                    padding-top: 3%;
+                    background: none;
+                    color: $titleColor;
+                    text-align: center;
+                    border: 2px solid $mainColor;
+                    border-radius: 15px;
+
+                    @media screen and (max-width: 1160px){
+                        margin-top: 10%;
+                        font-size: 12px;
+                    }
+                }
+
+                .degustation_button:hover {
+                    border: 2px solid $activeButton;
+                    background-color: $activeButton;
+                    color: $titleColor;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    &__center {
+        margin-left: 22%;
+        margin-top: 7%;
+
+        @media screen and (max-height: 685px) {
+            margin-top: 4%;
+        }
+
+        @media screen and (max-width: 850px) {
+            margin-left: 11%;
+            margin-top: 14%;
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-left: 0;
+            margin-top: 27%;
+        }
+
+        .main_title {
+            @include font(900, 48px);
+            color: $titleColor;
+            text-transform: uppercase;
+            margin-bottom: 9%;
+
+            @media screen and (max-width: 425px) {
+                @include font(700, 38px);
+                text-align: center;
+                margin-top: 15%;
+            }
+            @media screen and (max-height: 685px) {
+                margin-bottom: 6%;
+            }
+        }
+
+        .secondary_title {
+            @include font(700, 48px);
+            color: $titleColor;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 425px) {
+                @include font(700, 26px);
+                text-align: center;
+            }
+        }
+
+        .header__mobile__logo {
+            display: none; 
+
+            @media screen and (max-width: 425px) {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+

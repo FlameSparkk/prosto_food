@@ -1,0 +1,113 @@
+.main_section5 {
+    background-image: url('../images/cake.png');
+    background-size: 455px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 4%;
+    @media screen and (max-width: 425px) {
+        background-size: 225.5px;
+        background-position: right center;
+    }
+
+    &__headline {
+        @include flexy(space-between);
+        margin-bottom: 3%;
+        @media screen and (max-width: 425px) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include font(700, 36px);
+        color: $mainColor;
+        justify-self: flex-start;
+        margin-left: 15%;
+        @media screen and (max-width: 425px) {
+           font-size: 26px;
+           margin-left: 0;
+        }
+    }
+
+    &__line {
+        width: 65%;
+        @include flexy(center, center);
+        
+        @media screen and (max-width: 1200px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+}
+
+.snack_machine {
+
+    &__wrapper {
+        @include flexy(space-evenly);
+        @include container(900px);
+        padding-bottom: 8%;
+        @media screen and (max-width: 425px) {
+            @include container(320px);
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__about {
+        width: 40%;
+        @include flexy(space-around, stretch, column);
+        @media screen and (max-width: 425px) {
+            width: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__photo {
+        width: 50%;
+        @media screen and (max-width: 425px) {
+            width: auto;
+            margin-bottom: 8%;
+        }
+    }
+
+    &__text {
+        @include font();
+        color: $mainTextColor;
+        @media screen and (max-width: 425px) {
+            margin-bottom: 5%;
+            text-align: center;
+        }
+    }
+
+    &__text2 {
+        @include font();
+        color: $mainTextColor;
+        @media screen and (max-width: 425px) {
+            margin-bottom: 15%;
+            text-align: center;
+        }
+    }
+
+    &__order {
+        align-self: center;
+        @include font();
+        background: none;
+        border: 2px solid $mainColor;
+        border-radius: 15px;
+        text-transform: uppercase;
+        color: $titleColor;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        letter-spacing: 3px;
+        transition: 0.5s;
+
+        &:hover {
+            border: 2px solid $activeButton;
+            background-color: $activeButton;
+            color: $titleColor;
+        }
+    }
+}

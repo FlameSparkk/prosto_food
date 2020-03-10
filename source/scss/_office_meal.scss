@@ -1,0 +1,130 @@
+.main_section2__wrapper {
+    margin-bottom: 7%;
+    background-image: url('../images/cruasan.png');
+    background-size: 455px;
+    background-position: left;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 425px) {
+        background-size: 225.5px;
+    }
+}
+
+.main_section2_title__wrapper {
+    @include flexy(space-between);
+    max-width: 1400px;
+    margin-left: 14%;
+    margin-bottom: 4.5%;
+
+    @media screen and (max-width: 425px) {
+        margin-left: 0;
+        @include container(320px);
+        justify-content: center;
+    }
+
+    .office_meal__title {
+        @include font(700, 36px);
+        text-transform: uppercase;
+        color: $mainColor;
+        @media screen and (max-width: 425px) {
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+
+    .office_meal__line_container {
+        width: 60%;
+        margin-left: 3%;
+
+        @media screen and (max-width: 1275px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .office_meal__line {
+            width: 100%;
+            margin-top: 24px;
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.main_section2_content__wrapper {
+    @include container(1200px);
+    @include flexy();
+    padding-bottom: 5%;
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+    }
+
+    .free_choice {
+        @include flexy(center, center, column);
+        @include container(400px);
+        @media screen and (max-width: 425px) {
+            @include container(320px);
+            margin-bottom: 10%;
+        }
+
+        &__title {
+            @media screen and (max-width: 425px) {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .preorder {
+        @include flexy(center, center, column);
+        @include container(400px);
+        @media screen and (max-width: 425px) {
+            @include container(320px);
+        }
+
+        &__title {
+            @media screen and (max-width: 425px) {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.content_title {
+    @include font(700, 36px);
+    text-align: center;
+    color: $titleColor;
+    margin-bottom: 7%;
+    @media screen and (max-width: 425px) {
+        font-size: 26px;
+    }
+}
+
+.content_description {
+    @include font();
+    color: $mainTextColor;
+    margin-bottom: 14%;
+}
+
+.content_button {
+    @include font(700, 18px);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: none;
+    color: $mainTextColor;
+    border: 2px solid $mainColor;
+    border-radius: 15px;
+    transition: 0.5s;
+
+    &:hover {
+        color: $black;
+        background-color: $mainColor;
+    }
+}
+
+.long_line {
+    width: 68%;
+}

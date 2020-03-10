@@ -1,0 +1,148 @@
+.page-footer {
+    background-color: #323232;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    &__top {
+        @include container(900px);
+        @include flexy(space-between);
+        margin-bottom: 2%;
+        @media screen and (max-width: 425px) {
+            @include container(320px);
+            flex-direction: column;
+        }
+
+        &__wrapper {
+            @include flexy();
+            @media screen and (max-width: 425px) {
+                margin-bottom: 8%;
+                @include flexy(space-between);
+            }
+        }
+
+        &__logo {
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+
+            &__mobile {
+                display: none;
+                @media screen and (max-width: 425px) {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        @include flexy(space-between, stretch, column);
+        padding-left: 0;
+        list-style: none;
+        margin-right: 8%;
+        color: $titleColor;
+
+        &_link {
+            @include font();
+            color: $titleColor;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__contacts {
+        @include flexy(space-between, stretch, column);
+        @media screen and (max-width: 425px) {
+            align-items: flex-end;
+        }
+
+        &__title {
+            @include font();
+            color: $titleColor;
+            @media screen and (max-width: 425px) {
+                margin-bottom: 5%;
+            }
+        }
+
+        &__phone {
+            @include font(700);
+            color: $mainColor;
+            letter-spacing: 1px;
+            @media screen and (max-width: 425px) {
+                margin-bottom: 5%;
+            }
+        }
+
+        &__email {
+            @include font();
+            color: $titleColor;
+        }
+
+        .footer__social__contacts {
+            @media screen and (max-width: 425px) {
+                width: 60%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    &__bottom {
+        @include flexy(space-between);
+        margin-bottom: 4%;
+    }
+
+    &__left-line {
+        @include flexy(center, center);
+        width: 40%;
+        @media screen and (max-width: 1050px) {
+            width: 35%;
+        }
+        @media screen and (max-width: 850px) {
+            width: 30%;
+        }
+    }
+
+    &__socials {
+        width: 10%;
+        @include flexy(space-evenly);
+        @media screen and (max-width: 425px) {
+            width: 30%;
+        }
+    }
+
+    &__right-line {
+        @include flexy(center, center);
+        width: 40%;
+        @media screen and (max-width: 1050px) {
+            width: 35%;
+        }
+        @media screen and (max-width: 850px) {
+            width: 30%;
+        }
+    }
+
+    &__credits {
+        @include font();
+        text-align: center;
+        @media screen and (max-width: 425px) {
+            margin-bottom: 5%;
+        }
+
+        .made_by {
+            color: $mainTextColor;
+        }
+
+        .who_made {
+            color: $mainTextColor;
+            transition: 0.5s;
+
+            &:hover {
+                text-decoration: underline;
+                color: $titleColor;
+            }
+        }
+    }
+}

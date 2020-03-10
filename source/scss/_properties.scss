@@ -1,0 +1,75 @@
+$mainColor: #ffba00;
+$titleColor: #f2f2f2;
+$mainTextColor: #bdbdbd;
+$notActive: #676666;
+$activeButton:#12b41e;
+$black: #111111;
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat'), local('Akrobat-Regular'), url('../font/Akrobat.woff2') format('woff2'), url('../font/Akrobat.woff') format('woff'), url('../font/Akrobat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('../font/Akrobatbold.woff2') format('woff2'), url('../font/Akrobatbold.woff') format('woff'), url('../font/Akrobatbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Black'), local('Akrobat-Black'), url('../font/Akrobatblack.woff2') format('woff2'), url('../font/Akrobatblack.woff') format('woff'), url('../font/Akrobatblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@mixin flexy($content: flex-start, $items: stretch, $dir: row) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $dir;
+}
+
+@mixin container($max-width: 1435px) {
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin font($weight: 400, $size: 16px) {
+    font-family: "Akrobat";
+    font-weight: $weight;
+    font-size: $size;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+p, h1, h2, h3, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    background: url('../images/bg_body.png') 50% 50% / cover repeat-y fixed;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}

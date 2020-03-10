@@ -1,0 +1,110 @@
+.main_section6 {
+    padding-bottom: 5%;
+
+    &__headline {
+        @include flexy();
+        margin-bottom: 5%;
+        @media screen and (max-width: 425px) {
+            justify-content: center;
+        }
+    }
+
+    &__line {
+        @include flexy(center, center);
+        width: 50%;
+        margin-right: 3%;
+
+        @media screen and (max-width: 1200px) {
+            width: 40%;
+        }
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        @include font(700, 36px);
+        color: $mainColor;
+        text-transform: uppercase;
+        @media screen and (max-width: 425px) {
+            font-size: 26px;
+        }
+    }
+}
+
+.our_mission__text1,
+.our_mission__text2 {
+    @include font();
+    color: $mainTextColor;
+}
+
+.our_mission__text1 {
+    @media screen and (max-width: 425px) {
+        margin-bottom: 5%;
+    }
+}
+
+.our_mission {
+
+    &__wrapper {
+        @include flexy(space-between);
+        @include container(900px);
+        margin-bottom: 10%;
+        @media screen and (max-width: 425px) {
+            @include container(320px);
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        width: 50%;
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    &__description {
+        @include flexy(space-evenly, stretch, column);
+        width: 43%;
+        @media screen and (max-width: 425px) {
+            width: auto;
+        }
+    }
+}
+
+.clients {
+
+    &__title {
+        @include font(700, 36px);
+        text-align: center;
+        color: $mainColor;
+        margin-bottom: 3%;
+        @media screen and (max-width: 425px) {
+            font-size: 26px;
+        }
+    }
+
+    &__videos {
+        @include flexy(center, center);
+
+        .prev__video {
+            margin-right: 2%;
+            background: transparent;
+            border: none;
+        }
+
+        .next__video {
+            margin-left: 2%;
+            background: transparent;
+            border: none;
+        }
+    }
+}
+
+.video {
+    &__name {
+        @include font(700, 24px);
+        color: $titleColor;
+        text-align: center;
+    }
+}
